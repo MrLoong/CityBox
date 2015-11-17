@@ -11,14 +11,14 @@
 #import "DbHelper.h"
 #import "GetManage.h"
 #import "MainTabBarController.h"
-#import "kkkViewController.h"
+
 
 
 @interface ViewController ()
 
 
 //View
-@property kkkViewController *loginViewController;
+@property LoginViewController *loginViewController;
 @property MainTabBarController *mainTabBarController;
 @property DbHelper *dbHelper;
 

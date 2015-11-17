@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E2590B753E27E4FBEACEF1BB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C531455320F6DA891FE9C2FF /* libPods.a */; };
 		FC42B2621BFB7F7400096262 /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42B2611BFB7F7400096262 /* UICollectionViewLeftAlignedLayout.m */; settings = {ASSET_TAGS = (); }; };
-		FC42B2EC1BFB882D00096262 /* kkkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42B2EB1BFB882D00096262 /* kkkViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FC85C3EB1BFB750400D204A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC85C3EA1BFB750400D204A9 /* main.m */; };
 		FC85C3EE1BFB750400D204A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC85C3ED1BFB750400D204A9 /* AppDelegate.m */; };
 		FC85C3F11BFB750400D204A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC85C3F01BFB750400D204A9 /* ViewController.m */; };
@@ -72,8 +71,6 @@
 		C531455320F6DA891FE9C2FF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC42B2601BFB7F7400096262 /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLeftAlignedLayout.h; sourceTree = "<group>"; };
 		FC42B2611BFB7F7400096262 /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
-		FC42B2EA1BFB882D00096262 /* kkkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kkkViewController.h; sourceTree = "<group>"; };
-		FC42B2EB1BFB882D00096262 /* kkkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kkkViewController.m; sourceTree = "<group>"; };
 		FC85C3E61BFB750400D204A9 /* CityBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC85C3EA1BFB750400D204A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC85C3EC1BFB750400D204A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -309,8 +306,6 @@
 			children = (
 				FC85C4291BFB772700D204A9 /* LibraryController.h */,
 				FC85C42A1BFB772700D204A9 /* LibraryController.m */,
-				FC42B2EA1BFB882D00096262 /* kkkViewController.h */,
-				FC42B2EB1BFB882D00096262 /* kkkViewController.m */,
 			);
 			name = LibraryController;
 			sourceTree = "<group>";
@@ -677,7 +672,6 @@
 				FC85C4311BFB785100D204A9 /* MainTabBarController.m in Sources */,
 				FC85C4561BFB79E200D204A9 /* FBShimmeringView.m in Sources */,
 				FC85C4721BFB7AA000D204A9 /* CYLRightImageButton.m in Sources */,
-				FC42B2EC1BFB882D00096262 /* kkkViewController.m in Sources */,
 				FC85C4841BFB7BF200D204A9 /* HttpRequesCenter.m in Sources */,
 				FC85C4631BFB7A1F00D204A9 /* ZFPopupOverlayView.m in Sources */,
 				FC85C46F1BFB7AA000D204A9 /* CYLDBManager.m in Sources */,
