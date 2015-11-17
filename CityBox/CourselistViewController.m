@@ -396,7 +396,7 @@ typedef void(^ISLimitWidth)(BOOL yesORNo,id data);
     self.rowsCountBydefaultSwitch = rowsCountBydefaultSwitch;
     UILabel *subtitleLabel = [[UILabel alloc] init];
     subtitleLabel.frame = CGRectMake(CGRectGetMinX(titleLabel.frame),
-                                     CGRectGetMaxY(titleLabel.frame) + 30,
+                                     CGRectGetMaxY(titleLabel.frame) ,
                                      [UIScreen mainScreen].bounds.size.width,
                                      14
                                      );

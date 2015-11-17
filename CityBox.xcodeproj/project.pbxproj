@@ -147,6 +147,8 @@
 		FC85C4831BFB7BF200D204A9 /* NetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWork.m; sourceTree = "<group>"; };
 		FC85C4871BFB7C3300D204A9 /* HttpProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpProtocol.h; sourceTree = "<group>"; };
 		FC85C4881BFB7C3300D204A9 /* HttpRequesCenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequesCenterProtocol.h; sourceTree = "<group>"; };
+		FCDEA51D1BFB97B1004DB539 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		FCDEA51E1BFB97B1004DB539 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -718,6 +720,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FC85C3F31BFB750400D204A9 /* Base */,
+				FCDEA51D1BFB97B1004DB539 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -726,6 +729,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FC85C3FB1BFB750400D204A9 /* Base */,
+				FCDEA51E1BFB97B1004DB539 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
