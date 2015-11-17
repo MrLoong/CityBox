@@ -74,11 +74,20 @@
     }else if ([httpNumber isEqual:@"login"]&&[message[@"status"] isEqual:@"School network connection failure"]){
         [self allertinitTitle:@"提示" meeeage:@"校园网络有问题"];
     }else if ([httpNumber isEqual:@"ClassData"]||[httpNumber isEqual:@"Stalls"]){
-        [_dbHeper addData:message type:httpNumber];
-        if([[_dbHeper searchCheck:@"ClassData"]  isEqual: @"yes"]&&[[_dbHeper searchCheck:@"Stalls"]  isEqual: @"yes"]){
-            [WSProgressHUD dismiss];
-            [self.view addSubview:_mainTabBarController.view];
+        
+        if([message[@"status"] isEqual:@"School network connection failure"]){
+           // [self allertinitTitle:@"提示" meeeage:@"校园网络有问题"];
         }
+        else{
+                [_dbHeper addData:message type:httpNumber];
+                
+                if([[_dbHeper searchCheck:@"ClassData"]  isEqual: @"yes"]&&[[_dbHeper searchCheck:@"Stalls"]  isEqual: @"yes"]){
+                    [WSProgressHUD dismiss];
+                    [self.view addSubview:_mainTabBarController.view];
+                }
+            }
+        
+       
     }
 }
 - (IBAction)loginCloud:(id)sender {

@@ -129,6 +129,8 @@ static NSString * const reuseIdentifier = @"classCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSLog(@"进入课表");
+    
     self.title = @"课表";
     NSString *openDayString = @"2015-09-7";
     _num = [self Calculate:openDayString];
@@ -318,6 +320,7 @@ static NSString * const reuseIdentifier = @"classCell";
     _i=0;
     _dbHelper = [GetManage getDbHelper];
     _message = [_dbHelper searchdata:@"ClassData"];
+        
     _week = [NSArray arrayWithObjects:@"Mon", @"Tue", @"Wed", @"Thu",@"Fri",@"Sat",@"Sun",nil];
     _number = [NSArray arrayWithObjects:@"1-2", @"3-4", @"5-6", @"7-8",@"9-10",@"11-12",nil];
     _weekNameString = [NSArray arrayWithObjects:@"UIT", @"周一", @"周二", @"周三",@"周四",@"周五",@"周六",@"周日",nil];

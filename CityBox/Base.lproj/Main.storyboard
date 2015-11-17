@@ -36,7 +36,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="we" translatesAutoresizingMaskIntoConstraints="NO" id="LbM-5C-cEV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="we" translatesAutoresizingMaskIntoConstraints="NO" id="LbM-5C-cEV">
                                 <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFo-kj-nQd">
@@ -292,19 +292,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qPs-w8-XVL" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2067" y="-579"/>
+            <point key="canvasLocation" x="2262" y="-548"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="447-yj-f8m">
             <objects>
                 <tableViewController id="t3r-Gh-GOF" customClass="AboutViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rm9-oE-jNf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="UmM-dn-gwD">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UmM-dn-gwD" id="g2D-ey-BRh">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -315,15 +318,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Gty-uu-8DP">
-                        <barButtonItem key="rightBarButtonItem" title="退出登录" id="zA7-cw-cSG">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <barButtonItem key="rightBarButtonItem" title="退出" id="tbU-Mc-RO7">
                             <connections>
-                                <action selector="quitLogin:" destination="t3r-Gh-GOF" id="f4T-JH-xSr"/>
+                                <action selector="quitLogin:" destination="t3r-Gh-GOF" id="zbo-0s-aJJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="VmJ-0R-rag" kind="showDetail" identifier="aboutToLogin" id="4ce-YL-WwN"/>
+                        <segue destination="VmJ-0R-rag" kind="showDetail" identifier="aboutToLogin" id="bTk-uI-4Yv"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="18e-ln-KgZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -679,6 +681,7 @@
                         <viewControllerLayoutGuide type="bottom" id="LRw-oN-ko5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4b9-Gi-qDN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" showsBookmarkButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKu-A0-pfk">
@@ -706,13 +709,13 @@
                                 <exclude reference="G6S-5R-r4F"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="nfa-CS-MpA"/>
                                 <exclude reference="6fZ-Zx-8o1"/>
                                 <exclude reference="cFa-Ib-PEP"/>
                                 <exclude reference="fo0-eY-ZTj"/>
                                 <exclude reference="RAM-tW-kb7"/>
                                 <exclude reference="RbH-m4-ZUm"/>
                                 <exclude reference="bKU-nS-IIK"/>
-                                <exclude reference="nfa-CS-MpA"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -721,13 +724,13 @@
                                 <include reference="G6S-5R-r4F"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="nfa-CS-MpA"/>
                                 <include reference="6fZ-Zx-8o1"/>
                                 <include reference="cFa-Ib-PEP"/>
                                 <include reference="fo0-eY-ZTj"/>
                                 <include reference="RAM-tW-kb7"/>
                                 <include reference="RbH-m4-ZUm"/>
                                 <include reference="bKU-nS-IIK"/>
-                                <include reference="nfa-CS-MpA"/>
                             </mask>
                         </variation>
                     </view>
@@ -768,6 +771,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Pg0-2K-lvN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8aY-qD-4XS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iY0-8t-5u8">
@@ -778,6 +782,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OsI-2M-6aZ" id="XRf-0a-Lqd">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -796,10 +801,10 @@
                                 <exclude reference="iY0-8t-5u8"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="aax-g2-xCf"/>
                                 <exclude reference="QAS-2M-PpB"/>
                                 <exclude reference="Vpj-qu-7Nt"/>
                                 <exclude reference="jcJ-yH-O4p"/>
-                                <exclude reference="aax-g2-xCf"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -807,10 +812,10 @@
                                 <include reference="iY0-8t-5u8"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="aax-g2-xCf"/>
                                 <include reference="QAS-2M-PpB"/>
                                 <include reference="Vpj-qu-7Nt"/>
                                 <include reference="jcJ-yH-O4p"/>
-                                <include reference="aax-g2-xCf"/>
                             </mask>
                         </variation>
                     </view>
@@ -831,6 +836,7 @@
                         <viewControllerLayoutGuide type="bottom" id="53V-RY-ign"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="W2R-0t-pvP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
