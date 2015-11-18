@@ -27,6 +27,7 @@
 @property UINavigationController *courselistViewController;
 @property UINavigationController *libraryViewController;
 @property UINavigationController *aboutViewController;
+@property UIAlertView *alert;
 @end
 
 @implementation AboutViewController
@@ -119,16 +120,19 @@
                 
             }
             if (indexPath.row==1) {
-                [self performSegueWithIdentifier:@"two" sender:self];
+                [self allertinitTitle:@"意见反馈" meeeage:@"请关注csxyxzs公众号进行反馈"];
             }
         
 
         } else if(indexPath.section == 1){
             if (indexPath.row == 0) {
-                [self performSegueWithIdentifier:@"three" sender:self];
+                [self allertinitTitle:@"加入我们" meeeage:@"请关注csxyxzs公众号进行反馈给我们留言"];
             }
             if (indexPath.row==1) {
-                [self performSegueWithIdentifier:@"four" sender:self];
+                
+                [self allertinitTitle:@"开发团队" meeeage:@"UIT小助手开发团队"];
+
+               // [self performSegueWithIdentifier:@"four" sender:self];
                 
             }
         }
@@ -189,6 +193,16 @@
     [self performSegueWithIdentifier:@"aboutToLogin" sender:self];
 
     
+}
+
+-(void)allertinitTitle:(NSString *)title meeeage:(NSString *)message{
+    self.alert = [[UIAlertView alloc] initWithTitle:title
+                                            message:message
+                                           delegate:self
+                                  cancelButtonTitle:@"确定"
+                                  otherButtonTitles:nil];
+   // [WSProgressHUD dismiss];
+    [_alert show];
 }
 
 @end
